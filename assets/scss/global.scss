@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Medium.ttf');
+  font-weight: 500;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-display: block;
+}
+
+html {
+  position: relative;
+  font-size: 16px;
+}
+
+#__layout,
+#__nuxt,
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  button {
+    cursor: pointer;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  font-family: Poppins, "Helvetica Neue", "Helvetica";
+
+  &:focus {
+    outline: none;
+  }
+}
