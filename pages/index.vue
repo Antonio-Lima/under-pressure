@@ -1,5 +1,5 @@
 <template>
-  <h1>Ainda estou fazendo</h1>
+  <a href="/login">Clique aqui</a>
 </template>
 
 <script lang="ts">
