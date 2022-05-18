@@ -32,31 +32,31 @@
 
 <script lang="js">
 
-  export default {
-    head() {
-      return {
-        title: "Login"
-      }
-    },
-
-    data() {
-      return {
-        isAuthenticated: false,
-        login: {
-          user: "",
-          password: "",
-        }
-      }
-    },
-
-    methods: {
-      tryLogin() {
-        console.log("Usuário: " + this.login.user);
-        console.log("Usuário: " + this.login.password);
-        this.isAuthenticated = (this.login.user && this.login.password);
-      },
+export default {
+  head() {
+    return {
+      title: "Login"
     }
+  },
+
+  data() {
+    return {
+      isAuthenticated: false,
+      login: {
+        user: "",
+        password: "",
+      }
+    }
+  },
+
+  methods: {
+    tryLogin() {
+      console.log("Usuário: " + this.login.user);
+      console.log("Usuário: " + this.login.password);
+      this.isAuthenticated = (this.login.user && this.login.password);
+    },
   }
+}
 </script>
 
 <style lang="scss" src="./style.scss"></style>
