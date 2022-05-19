@@ -16,7 +16,7 @@
       transition: 0.2s;
 
       &:hover {
-        color: #0496FF;
+        color: var(--light-blue);
       }
     }
 
@@ -52,10 +52,10 @@
 
       margin-right: 0.5rem;
 
-      background-color: #04E762;
+      background-color: var(--green);
       border-radius: 5px;
     }
 
-    border-bottom: 1px solid #C4C4C4;
+    border-bottom: 1px solid var(--gray);
   }
 }

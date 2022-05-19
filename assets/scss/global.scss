@@ -19,6 +19,16 @@
   font-display: block;
 }
 
+:root {
+  --blue: #006BA6;
+  --light-blue: #0496FF;
+  --orange: #FFBC42;
+  --green: #04E762;
+  --red: #F51720;
+  --background: #F0F2F5;
+  --gray: #C4C4C4;
+}
+
 html {
   position: relative;
   font-size: 16px;
@@ -33,7 +43,7 @@ html {
   margin: 0;
   padding: 0;
 
-  background-color: #F0F2F5;
+  background-color: var(--background);
 
   a, button {
     cursor: pointer;

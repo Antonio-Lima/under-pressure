@@ -1,0 +1,23 @@
+li {
+  display: flex;
+  align-items: center;
+
+  font-size: 1rem;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+
+  margin-right: 0.5rem;
+
+  border-radius: 5px;
+
+  &-online {
+    background-color: var(--green);
+  }
+
+  &-offline {
+    background-color: var(--gray);
+  }
+}
