@@ -17,56 +17,12 @@
       </div>
       <div class="friends">
         <h2>Amigos online</h2>
-        <ul>
-          <li>
-            <div class="online"></div>
-            João
-          </li>
-          <li>João</li>
-          <li>João</li>
-          <li>João</li>
-          <li>João</li>
-          <li>João</li>
-          <li>João</li>
-        </ul>
+        <friendList :friends="friends"/>
       </div>
     </div>
   </div>
 </template>
 
-<script lang="js">
-import headerUP from "../../components/header/index.vue";
-
-export default {
-  head() {
-    return {
-      title: "Home"
-      }
-    },
-  data() {
-    friends: [
-      {
-        name: "João",
-        active: true
-      },
-      {
-        name: "Antônio",
-        active: true
-      },
-      {
-        name:"Carol",
-        active: false
-      },
-      {
-        name: "Aleatório22",
-        active: false
-      }]
-  },
-  components: {
-    headerUP,
-  }
-}
-
-</script>
+<script src="./index"></script>
 
 <style lang="scss" src="./style.scss"></style>

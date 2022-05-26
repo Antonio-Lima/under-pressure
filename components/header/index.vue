@@ -11,17 +11,6 @@
     </div>
 </template>
 
-<script>
-  export default {
-    name: "headerUP",
-    props: {
-      activePage: {
-        type: String,
-        required: true,
-        default: "home"
-      }
-    }
-  }
-</script>
+<script src="./index"></script>
 
 <style lang="scss" src="./style.scss"></style>
