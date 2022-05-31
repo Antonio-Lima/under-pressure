@@ -1,5 +1,6 @@
 import headerUP from "../../components/header/index.vue";
-import friendList from "../../components/FriendList/index.vue"
+import friendList from "../../components/friendList/index.vue";
+import feed from "../../components/feed/index.vue";
 
 export default {
   head() {
@@ -12,44 +13,24 @@ export default {
       friends: [
         {
           id: 0,
-          name: "João",
+          name: "Neymar Jr",
           online: true
         },
         {
           id: 1,
-          name: "Antônio",
-          online: false
-        },
-        {
-          id: 2,
-          name:"Carol",
+          name: "Sylvester Stallone",
           online: true
         },
         {
+          id: 2,
+          name:"Dwayne Johnson",
+          online: false
+        },
+        {
           id: 3,
-          name: "Aleatório22",
+          name: "Will Smith",
           online: false
         },
-        {
-          id: 4,
-          name: "Aleatório22",
-          online: false
-        },
-        {
-          id: 5,
-          name: "Aleatório22",
-          online: false
-        },
-        {
-          id: 6,
-          name: "Aleatório22",
-          online: false
-        },
-        {
-          id: 7,
-          name: "Aleatório22",
-          online: false
-        }
       ]
     }
   },
@@ -61,5 +42,6 @@ export default {
   components: {
     headerUP,
     friendList,
+    feed,
   }
 }

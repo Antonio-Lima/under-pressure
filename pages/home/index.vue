@@ -12,9 +12,7 @@
           </li>
         </ul>
       </div>
-      <div class="content">
-
-      </div>
+      <feed />
       <div class="friends">
         <h2>Amigos online</h2>
         <friendList :friends="friends"/>

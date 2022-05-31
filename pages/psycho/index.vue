@@ -1,6 +1,6 @@
 <template>
   <div>
-    <headerUP activePage="profile"/>
+    <headerUP activePage="psycho"/>
     <div class="content">
       <h1>
         Esta página ainda esta em desenvolvimento.
@@ -16,10 +16,10 @@ import headerUP from "../../components/header/index.vue";
 export default {
   head() {
     return {
-      title: "Perfil"
+      title: "Profissionais"
     }
   },
-  name: "profile",
+  name: "psycho",
   components: {
     headerUP,
   }

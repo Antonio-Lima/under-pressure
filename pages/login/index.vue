@@ -5,11 +5,11 @@
     </div>
     <div class="login">
       <img src="@/assets/img/Logo.svg" alt="UnderPressure">
-      <form :action="isAuthenticated ? '/home' : '/login'">
-        <input v-model="login.user" type="text" placeholder="Usuário:" :class="login.user ? 'input-ok' : ''">
-        <input v-model="login.password" type="text"  placeholder="Senha:" :class="login.password ? 'input-ok' : ''">
-        <button type="submit" class="btn-login" @click="tryLogin()">Entrar</button>
-      </form>
+      <div class="form">
+        <input v-model="login.user" type="email" placeholder="Usuário:" :class="login.user ? 'input-ok' : ''">
+        <input v-model="login.password" type="password"  placeholder="Senha:" :class="login.password ? 'input-ok' : ''">
+        <button class="btn-login" @click="tryLogin()">Entrar</button>
+      </div>
       <div class="divisor"></div>
       <div class="connections">
         <button>
