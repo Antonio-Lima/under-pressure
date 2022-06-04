@@ -1,5 +1,5 @@
 import headerUP from "../../components/header/index.vue";
-import friendList from "../../components/friendList/index.vue";
+import friendList from "../../components/FriendList/index.vue";
 import feed from "../../components/feed/index.vue";
 
 export default {
