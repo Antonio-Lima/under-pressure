@@ -6,5 +6,15 @@ export default {
       required: true,
       default: "home"
     }
-  }
+  },
+
+  data() {
+    return {
+      username: "",
+    }
+  },
+
+  beforeMount() {
+    this.username = localStorage.user;
+  },
 }

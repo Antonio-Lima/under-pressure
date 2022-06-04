@@ -47,6 +47,7 @@
 .feed {
   background: var(--white);
   width: 100%;
+  margin-bottom: 2rem;
 
   border-radius: 8px;
 
@@ -81,9 +82,7 @@
 
   &-buttons {
     display: flex;
-    justify-content: space-between;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    justify-content: center;
     margin-top: -30px;
     margin-bottom: -15px;
 
@@ -97,11 +96,23 @@
       border: 1px solid var(--gray);
       border-radius: 30px;
       filter: drop-shadow(2px 2px 1px var(--gray));
+
+      transition: 0.2s;
+
+      &.liked {
+        border: 2px solid var(--light-blue);
+        color: var(--light-blue);
+      }
     }
   }
 
-  & + .feed {
-    margin-top: 2rem;
+  p {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: var(--light-blue);
+
+    margin-top: -2rem;
   }
 }
 

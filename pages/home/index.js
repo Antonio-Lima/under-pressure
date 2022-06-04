@@ -13,30 +13,26 @@ export default {
       friends: [
         {
           id: 0,
-          name: "Neymar Jr",
+          name: "Amigo 1",
           online: true
         },
         {
           id: 1,
-          name: "Sylvester Stallone",
+          name: "Amigo 2",
           online: true
         },
         {
           id: 2,
-          name:"Dwayne Johnson",
+          name:"Amigo 3",
           online: false
         },
         {
           id: 3,
-          name: "Will Smith",
+          name: "Amigo 4",
           online: false
         },
       ]
     }
-  },
-
-  mounted() {
-    console.log(this.friends);
   },
 
   components: {

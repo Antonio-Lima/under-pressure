@@ -13,16 +13,15 @@
             {{ post.user }}
           </h2>
         </div>
-
-        <img class="icon" src="@/assets/icons/Menu-Icon.svg" alt="">
       </div>
 
       <div v-if="post.post.includes('>')" class="feed-post" v-html="post.post"></div>
       <div v-else class="feed-post">
         {{ post.post }}
       </div>
+      <p v-if="post.user === user">Curtidas: {{ post.likes }}</p>
 
-      <div v-if="post.coments > 0" class="feed-coments">
+      <!-- <div v-if="post.coments > 0" class="feed-coments">
         <h3>Comentários</h3>
         <div class="coment">
           <div class="coment-header">
@@ -37,20 +36,12 @@
         <h6>
           {{ post.coments }} comentários
         </h6>
-      </div>
+      </div> -->
 
       <div class="feed-buttons">
-        <button>
+        <button :class="post.liked ? 'liked' : ''" @click="likeClick(post)">
           <img src="@/assets/icons/Like.svg" alt="">
           Curtir
-        </button>
-        <button>
-          <img src="@/assets/icons/Coment.svg" alt="">
-          Comentar
-        </button>
-        <button>
-          <img src="@/assets/icons/Share.svg" alt="">
-          Compartilhar
         </button>
       </div>
     </div>

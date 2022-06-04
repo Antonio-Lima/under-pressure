@@ -71,6 +71,7 @@
 
   .divisor {
     border-top: 1px solid var(--orange);
+    margin-bottom: 0.8rem;
   }
 
   .connections {
@@ -105,7 +106,8 @@
   .others {
     display: contents;
 
-    a {
+    button {
+      background: none;
       margin: 0 auto;
       color: #fff;
 
