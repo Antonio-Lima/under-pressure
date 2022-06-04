@@ -3,6 +3,7 @@ export default {
 
   data() {
     return {
+      newPost: "",
       user: "",
       feed: [
       {
