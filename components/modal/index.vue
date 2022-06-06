@@ -11,7 +11,7 @@
         <label for="username">Nome de usuário</label>
         <input type="text" v-model="form.username">
         <label for="email">e-mail</label>
-        <input type="text" v-model="form.email">
+        <input type="email" v-model="form.email">
         <label for="password">Senha</label>
         <input type="password" v-model="form.password">
         <label for="password">Confirmar senha</label>

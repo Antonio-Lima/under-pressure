@@ -1,6 +1,7 @@
 import headerUP from "../../components/header/index.vue";
 import friendList from "../../components/FriendList/index.vue";
 import feed from "../../components/feed/index.vue";
+import PsychoModal from "../../components/psychoModal/index.vue";
 
 export default {
   head() {
@@ -10,25 +11,26 @@ export default {
     },
   data() {
     return {
+      showModal: false,
       friends: [
         {
           id: 0,
-          name: "Amigo 1",
+          name: "João",
           online: true
         },
         {
           id: 1,
-          name: "Amigo 2",
+          name: "Catarina",
           online: true
         },
         {
           id: 2,
-          name:"Amigo 3",
+          name:"Enzo",
           online: false
         },
         {
           id: 3,
-          name: "Amigo 4",
+          name: "Paulo",
           online: false
         },
       ]
@@ -39,5 +41,6 @@ export default {
     headerUP,
     friendList,
     feed,
+    PsychoModal,
   }
 }

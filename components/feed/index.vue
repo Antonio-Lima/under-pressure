@@ -21,7 +21,7 @@
       </div>
       <p v-if="post.user === user">Curtidas: {{ post.likes }}</p>
 
-      <!-- <div v-if="post.coments > 0" class="feed-coments">
+      <div v-if="post.lastComent" class="feed-coments">
         <h3>Comentários</h3>
         <div class="coment">
           <div class="coment-header">
@@ -30,13 +30,13 @@
           </div>
           <div v-if="post.lastComent.coment.includes('>')" class="coment-content" v-html="post.lastComent.coment"></div>
           <div v-else class="coment-content">
-            {{ post.lastComent.coment.includes }}
+            {{ post.lastComent.coment }}
           </div>
         </div>
         <h6>
-          {{ post.coments }} comentários
+          {{ post.coments }} comentário
         </h6>
-      </div> -->
+      </div>
 
       <div class="feed-buttons">
         <button :class="post.liked ? 'liked' : ''" @click="likeClick(post)">

@@ -9,6 +9,10 @@
     margin: 0 2rem;
     padding: 1.25rem 2rem;
 
+    li + li {
+      margin-top: 1rem;
+    }
+
     a {
       font-size: 1.25rem;
       font-weight: 600;
@@ -16,12 +20,32 @@
 
       transition: 0.2s;
 
+      &:visited {
+        color: #000000;
+      }
+
       &:hover {
         color: var(--light-blue);
       }
     }
+    ul {
+      border-bottom: 1px solid var(--gray);
+      padding-bottom: 1rem;
+    }
 
-    border-bottom: 1px solid var(--gray);
+
+  }
+
+  .ad {
+    height: 100vh;
+    margin-top: 1rem;
+    background-color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
   }
 
   .friends {
@@ -54,7 +78,5 @@
       background-color: var(--green);
       border-radius: 5px;
     }
-
-    border-bottom: 1px solid var(--gray);
   }
 }

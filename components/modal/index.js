@@ -23,7 +23,7 @@ export default {
         alert("Por favor, informe um endereço de e-mail válido");
         return;
       }
-      if (this.form.password === "" || this.form.password.length >= 6) {
+      if (this.form.password === "" || !this.form.password.length >= 6) {
         alert("Por favor, informe uma senha válida de 6 ou mais dígitos");
         return;
       }
@@ -47,6 +47,11 @@ export default {
       })
 
       this.creationOk = true;
+
+      this.form.username = "";
+      this.form.email = "";
+      this.form.password = "";
+      this.form.passwordConfirm = "";
     },
   },
 }

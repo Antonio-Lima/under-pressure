@@ -1,0 +1,46 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #000000da;
+}
+
+.modal {
+  background-color: var(--white);
+  width: 37.5rem;
+  height: 31.25rem;
+  margin-top: 10%;
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .profissional {
+    border-bottom: 1px solid var(--gray);
+  }
+
+  button {
+    width: 16.6rem;
+    height: 2.4rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: 2px solid var(--red);
+    border-radius: 20px;
+    color: var(--red);
+    background: var(--white);
+    font-size: 1.12rem;
+
+    transition: 0.4s;
+
+    &:hover {
+      background: var(--red);
+      color: var(--white);
+    }
+  }
+
+}

@@ -1,0 +1,43 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  justify-content: space-between;
+
+  background: var(--white);
+  border-radius: 20px;
+  margin-top: -6rem;
+  padding: 2rem;
+
+  h2 {
+    margin-top: 1rem;
+  }
+
+  filter: drop-shadow(2px 2px 1px var(--gray));
+}
+
+.ansiedade {
+  max-width: 48%;
+  padding-right: 1rem;
+  border-right: 1px solid var(--gray);
+
+  span {
+    font-weight: bold;
+  }
+
+  li {
+    margin-left: 2rem;
+    list-style-type: circle;
+  }
+}
+
+.depressao {
+  max-width: 48%;
+
+  li {
+    margin-left: 2rem;
+    list-style-type: circle;
+  }
+}
