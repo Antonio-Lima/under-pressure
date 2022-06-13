@@ -22,7 +22,7 @@
     </div>
     <div class="footer">
       <h1>Se quiser fazer parte dessa comunidade, clique abaixo para entrar</h1>
-      <a href="/login">Entrar</a>
+      <NuxtLink to="/login">Entrar</NuxtLink>
       <p>All rights reserved UnderPressure ©2021</p>
     </div>
   </div>

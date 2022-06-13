@@ -43,7 +43,7 @@ export default {
 
       if (user) {
         localStorage.user = user;
-        window.location.href = "/home";
+        this.$router.push("home");
       } else {
         alert("Usuário ou senha inválidos");
       }

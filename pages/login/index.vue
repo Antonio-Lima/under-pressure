@@ -1,15 +1,30 @@
 <template>
   <div class="main">
     <div class="image">
-      <img src="@/assets/img/Social-Interaction 1.svg" alt="Social-Interaction-1">
+      <img
+        src="@/assets/img/Social-Interaction 1.svg"
+        alt="Social-Interaction-1"
+      />
     </div>
     <div class="login">
-      <img src="@/assets/img/Logo.svg" alt="UnderPressure">
-      <div class="form">
-        <input v-model="login.user" type="email" placeholder="Usuário:" :class="login.user ? 'input-ok' : ''">
-        <input v-model="login.password" type="password" placeholder="Senha:" :class="login.password ? 'input-ok' : ''">
-        <button class="btn-login" @click="tryLogin()">Entrar</button>
-      </div>
+      <img src="@/assets/img/Logo.svg" alt="UnderPressure" />
+      <form @submit.prevent="tryLogin()">
+        <input
+          v-model="login.user"
+          type="email"
+          placeholder="Email:"
+          :class="login.user ? 'input-ok' : ''"
+          required
+        />
+        <input
+          v-model="login.password"
+          type="password"
+          placeholder="Senha:"
+          :class="login.password ? 'input-ok' : ''"
+          required
+        />
+        <button type="submit" class="btn-login">Entrar</button>
+      </form>
       <div class="divisor"></div>
       <!-- <div class="connections">
         <button>

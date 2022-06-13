@@ -24,6 +24,10 @@
         color: #000000;
       }
 
+      &:default {
+        color: #000000;
+      }
+
       &:hover {
         color: var(--light-blue);
       }

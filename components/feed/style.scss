@@ -41,6 +41,14 @@
     border: 1px solid var(--gray);
     border-radius: 30px;
     filter: drop-shadow(2px 2px 1px var(--gray));
+
+    transition: 0.2s;
+
+    &:hover {
+      background-color: var(--light-blue);
+      border: 1px solid var(--light-blue);
+      color: var(--white);
+    }
   }
 }
 
@@ -102,6 +110,12 @@
       &.liked {
         border: 2px solid var(--light-blue);
         color: var(--light-blue);
+      }
+
+      &:hover {
+        background-color: var(--light-blue);
+        border: 2px solid var(--light-blue);
+        color: var(--white);
       }
     }
   }

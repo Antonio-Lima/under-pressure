@@ -58,18 +58,20 @@ export default {
 
   methods: {
     sendPost() {
-      this.feed = [{
-        id: this.feed.length,
-        user: this.user,
-        photo: "",
-        date: Date.now(),
-        post: this.newPost,
-        liked: false,
-        coments: 0,
-        likes: 0,
-      }, ...this.feed]
+      if (this.newPost) {
+        this.feed = [{
+          id: this.feed.length,
+          user: this.user,
+          photo: "",
+          date: Date.now(),
+          post: this.newPost,
+          liked: false,
+          coments: 0,
+          likes: 0,
+        }, ...this.feed]
 
-      this.newPost = "";
+        this.newPost = "";
+      }
     },
 
     likeClick(post) {

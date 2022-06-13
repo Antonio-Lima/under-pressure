@@ -7,21 +7,25 @@
           <font-awesome-icon icon="fa-solid fa-circle-xmark" />
         </button>
       </div>
-      <div v-if="!creationOk" class="form">
-        <label for="username">Nome de usuário</label>
-        <input type="text" v-model="form.username">
-        <label for="email">e-mail</label>
-        <input type="email" v-model="form.email">
-        <label for="password">Senha</label>
-        <input type="password" v-model="form.password">
-        <label for="password">Confirmar senha</label>
-        <input type="password" v-model="form.passwordConfirm">
-        <button @click="createUser">Confirmar</button>
+      <div v-if="!creationOk">
+        <form @submit.prevent="createUser">
+          <label for="username">Nome de usuário</label>
+          <input type="text" v-model="form.username" required />
+          <label for="email">e-mail</label>
+          <input type="email" v-model="form.email" required />
+          <label for="password">Senha</label>
+          <input type="password" v-model="form.password" required />
+          <label for="password">Confirmar senha</label>
+          <input type="password" v-model="form.passwordConfirm" required />
+          <button @click="createUser">Confirmar</button>
+        </form>
       </div>
       <div v-else class="conclude">
         <font-awesome-icon class="icon" icon="fa-solid fa-circle-check" />
         <h1>Cadastro criado com sucesso!</h1>
-        <button @click="creationOk = false, $emit('close-modal')">Concluído</button>
+        <button @click="(creationOk = false), $emit('close-modal')">
+          Concluído
+        </button>
       </div>
     </div>
   </div>
@@ -29,5 +33,4 @@
 
 <script src="./index"></script>
 
-<style lang="scss" src="./style.scss" scoped>
-</style>
+<style lang="scss" src="./style.scss" scoped></style>
